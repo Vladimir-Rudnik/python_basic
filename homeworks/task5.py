@@ -10,9 +10,9 @@ expenses = float(input("Введите издержки: "))
 
 if proceeds > expenses:
     profitability = proceeds / expenses
-    print("Период завершился с прибылью.\nРентабельность составила: ", round(profitability, 2))
+    print(f"Период завершился с прибылью.\nРентабельность составила: {profitability:.0f}")
     number = int(input("Теперь введите кол-во сотрудников: "))
-    print(f"Прибыль на человека составила: {round((proceeds / number), 2)}")
+    print(f"Прибыль на человека составила: {(proceeds / number):.2f}")
 elif proceeds < expenses:
     print("Период завершён с убытком.")
 else:
